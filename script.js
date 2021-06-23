@@ -16,9 +16,10 @@ class TreeNode {
     }
 }
 
-class RootSearchTree {
-    constructor() {
-        this.root = null;
+class BST {
+    constructor(value) {
+        this.root = new Node(value);
+        this.count = 0
     }
 }
 
@@ -27,6 +28,8 @@ insert(value) {
     if(!this.root) {
         this.root = newNode;
         return this;
+    } else {
+
     }
 }
 
