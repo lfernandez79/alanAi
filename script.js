@@ -1,12 +1,4 @@
 
-// let tree = document.getElementById("BST");
-// const rendertest = () => {
-//     tree.innerHTML = "Just a quick test to make sure there is a rendering from JS to HTML into DOM, this could change as i see it developing"
-// }
-// rendertest();
-
-
-
 // TreeNode class constructor will take in a value and set that as value node
 class Node {
     constructor(value) {
@@ -15,8 +7,6 @@ class Node {
         this.right = null;
     }
 }
-const node = new Node(100);
-console.log(node)
 
 class BST {
     constructor() {
@@ -29,6 +19,8 @@ class BST {
     }
 
     insert(value) {
+        this.count++
+
         const node = new Node(value)
         if(!this.root) {
             this.root = node
@@ -53,4 +45,17 @@ class BST {
             }
         }
     }
+}
+const bst = new BST();
+bst.insert(0)
+bst.insert(-100)
+bst.insert(100)
+bst.insert(50)
+bst.insert(-50)
+console.log(bst)
+
+
+let tree = document.getElementById("BST");
+const rendertest = () => {
+    tree.innerHTML = "Just a quick test to make sure there is a rendering from JS to HTML into DOM, this could change as i see it developing"
 }
