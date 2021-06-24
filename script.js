@@ -15,10 +15,12 @@ class Node {
         this.right = null;
     }
 }
+const node = new Node(100);
+console.log(node)
 
 class BST {
-    constructor(value) {
-        this.root = new Node(value);
+    constructor() {
+        this.root = null
         this.count = 0
     }
 
@@ -27,30 +29,9 @@ class BST {
     }
 
     insert(value) {
-        this.count++
-        let newNode = new Node(value);
-
-        const searchTree = (node) => {
-            if (value < node.value) {
-                if (!node.left) {
-                    node.left = newNode
-                }
-                else {
-                    searchTree(node.left)
-                }
-            }
-            else if (value > node.value) {
-                if (!node.right) {
-                    node.right = newNode
-                }
-                else {
-                    searchTree(node.right)
-                }
-            }
+        const node = new Node(value)
+        if(!this.root) {
+            this.root = node
         }
-        searchTree(this.root);
     }
 }
-
-const binarySearchTree = new BST(1)
-binarySearchTree.insert(17)
