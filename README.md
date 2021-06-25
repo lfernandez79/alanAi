@@ -1,7 +1,8 @@
 # alanAi
 
 # Javascript Engineer Take Home Challenge
-### Timeframe: 24 hours to complete
+
+> https://lfernandez79.github.io/alanAi/
 
 We appreciate the time you have spent with Alan thus far and for making the time to complete
 this exercise to the best of your ability. This will help us assess your skills.
@@ -17,5 +18,3 @@ Exercise Details:
 the record, then do frequent commits at least every 45 minutes to keep track of your work.
 
 > Please send us the link to your GitHub repository after you’re done.
-
-> https://lfernandez79.github.io/alanAi/
