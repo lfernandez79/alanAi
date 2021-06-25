@@ -47,23 +47,24 @@ class BST {
     }
 }
 
-const capture = () => {
+
     let myArray = [];
     for (let i = -100; i <= 100; i++) {
         const num = i;
         myArray.push(num)
     }
-    return Math.floor(Math.random() * myArray.length) - 100
-}
-console.log(capture())
+    const random = Math.floor(Math.random() * myArray.length) - 100
+    console.log(random)
+
+
 
 const bst = new BST();
 bst.insert(0)
 bst.insert(-100)
 bst.insert(100)
 bst.insert(50)
-bst.insert(-50)
-bst.insert(-10)
+bst.insert(2)
+bst.insert(-1)
 
 console.log(bst)
 console.log(bst.root)
@@ -78,8 +79,3 @@ let treeRootLeft = document.getElementById("BSTrootleft");
     treeRootLeft.innerHTML = JSON.stringify(bst.root.left)
 let treeRootRight = document.getElementById("BSTrootright");
     treeRootRight.innerHTML = JSON.stringify(bst.root.right)
-
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
-    }
