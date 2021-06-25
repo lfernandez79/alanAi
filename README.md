@@ -17,3 +17,5 @@ Exercise Details:
 the record, then do frequent commits at least every 45 minutes to keep track of your work.
 
 > Please send us the link to your GitHub repository after you’re done.
+
+> https://lfernandez79.github.io/alanAi/
